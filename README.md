@@ -14,7 +14,7 @@ app = express();
   someRouter.get('/v1', (req, res) => {
         res.send('OK');
   });
-  
+
    someRouter.post('/v1', (req, res) => {
         res.send('OK');
   });
@@ -33,6 +33,7 @@ console.log(JSON.stringify(listEndpointsExpress(app), null, 2));
 ### `app` - Express `app`
 
 your app instance (`app`).
+
 someRouter consists of routes to handle POST & GET using 'v1' context.
 
 ## Output
