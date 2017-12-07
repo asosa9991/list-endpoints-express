@@ -22,6 +22,36 @@ console.log(JSON.stringify(listEndpoints(app), null, 2));
 ### `app` - Express `app`
 
 your app instance (`app`).
+someRouter consists of routes to handle POST & GET using 'v1' context.
+
+## Output
+
+```JSON
+[
+  {
+    "method": "POST",
+    "paths": [
+      "/about/v1",
+      "/help/v1",
+      "/:uriParam/help/v1",
+      "/view/v1",
+      "/viewHelp/v1",
+      "/view/help/v1"
+    ]
+  },
+  {
+    "method": "GET",
+    "paths": [
+    "/about/v1",
+    "/help/v1",
+    "/:uriParam/help/v1",
+    "/view/v1",
+    "/viewHelp/v1",
+    "/view/help/v1"
+    ]
+    }
+  ]
+  ```
 
 ## license
 
